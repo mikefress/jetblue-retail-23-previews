@@ -60,20 +60,7 @@ myFT.on('instantads',function(){
       // partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
 
       if(partner_logo_src == "n/a"){
-        //no partner logo included in feed, do nothing
       }else{
-        //partner logo included in feed
-        console.log('partner logo included!')
-        document.getElementById('blueBottomCard').style.height = '68px'
-        document.getElementById('blueBottomCard').style.top = '182px'
-        document.getElementById('endframeBg').style.top = '176px'
-        document.getElementById('logoHolder').style.top = '192px'
-        document.getElementById('logoHolder').style.alignItems = 'center'
-        document.getElementById('termsCopyright').style.top = '227px'
-        document.getElementById('termsCopyright').style.width = '250px'
-        document.getElementById('terms1').style.top = '227px'
-        document.getElementById('terms1').style.width = '250px'
-
         var partner_logo_img = myFT.$("#partner_logo_img");
         partner_logo_img[0].src=partner_logo_src;
       }

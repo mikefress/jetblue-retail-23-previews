@@ -69,14 +69,6 @@ function feedLoaded(feed){
     //testing swap between layouts for partner logo
     // partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
 
-    if(partner_logo_src == "n/a"){
-      //no partner logo included in feed, do nothing
-
-    }else{
-      // document.getElementById('text_holder').style.height = '150px'
-      document.getElementById('terms').style.top = '236px'
-
-    }
     try{
 
         lowestfare_faredollaramount = feed[0].lowestfare_faredollaramount;
