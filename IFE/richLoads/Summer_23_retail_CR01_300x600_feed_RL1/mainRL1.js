@@ -101,7 +101,6 @@ function init() {
 
   // Set Global Timeline
   tl = new TimelineMax();
-  tl2 = new TimelineMax();
 
   animate();
 
@@ -109,30 +108,29 @@ function init() {
 
 function animate() {
   //make parent (base file) border black
-  window.parent.document.getElementById("border").style.borderColor="#000"
 
-  tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set(["#seatBase"], { scale: 1.4, y: 15, force3D: true });
+  tl.set(["#main_content"], { autoAlpha: 1, rotation: 0.01, force3D: true });
+  tl.set(["#seatBase"], { scale: 1.4, y: 15, rotation: 0.01 });
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
 
   .addLabel('handAnimation', 1.5)
   .to('#armhandle', 2, { rotation: 0, y: 0, x: 0, ease: Power4.easeOut }, "handAnimation")
-  .to('#arm', 1, { scale: 0.5, x: 20, y: 220, rotation: 50,  ease: Power1.easeIn }, "-=1.8")
-  .to('#basketball', 0.7, { scale: 0.8, x: 109, y: 45, rotation: 150, ease: "none" }, "-=1.8")
-  .to('#basketball', 0.8, { scale: 1, x: 129, y: 248, rotation: -60, ease: "none" }, "-=1.1")
-  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut})
+  .to('#arm', 1, { scale: 0.6, x: 20, y: 220, rotation: 50,  ease: "none" }, "handAnimation+=0.2")
+  .to('#basketball', 0.8, { scale: 0.8, x: 112, y: 35, rotation: 50, ease: "none" }, "handAnimation+=0.2")
+  .to('#basketball', 0.7, { scale: 1, x: 141, y: 248, rotation: -60, ease: "none" }, "handAnimation+=0.9")
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, "+=0")
 
   // Move the inner blue box up
-  .addLabel('seatAnimation', "+=1.5")
+  .addLabel('seatAnimation', "+=2")
   .to('#seatBase', 0.6, { scale: 1, y: 0, ease: Power1.easeIn }, "seatAnimation")
   .to('#seatScreen', 0.6, { scale: 0.7, y: -20,  ease: Power1.easeIn }, "seatAnimation")
   .to('#innerBox', 0.6, { scale: 0.7, y: -40,  ease: Power1.easeIn }, "seatAnimation")
   .to('#seatOverlay', 0.6, { autoAlpha: 1,  ease: Power1.easeIn }, "seatAnimation")
   // .to('#net', 1, { autoAlpha: 0,  ease: Power1.easeIn }, "seatAnimation"); // should this fade out?
   .to('#net', 0.6, { autoAlpha: 0,  ease: Power1.easeIn }, "seatAnimation") // should this fade out?
-  .to('#playIcon', 0.4, { autoAlpha: 1,  ease: Power1.easeIn }, "+=0")
+  .to('#playIcon', 0.4, { autoAlpha: 1,  ease: Power1.easeIn }, "seatAnimation+=0.6")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'seatAnimation-=0.5')
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'seatAnimation')
   .to('#terms1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'seatAnimation')
