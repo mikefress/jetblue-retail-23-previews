@@ -9,7 +9,6 @@ var easing = Power4.easeOut;
 // Timeline reference
 var tl;
 
-
 //@FT VARIABLE DECLARATIONS
 var showDefault=true,
     thisFeedLoaded=false,
