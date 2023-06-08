@@ -119,10 +119,10 @@ function animate() {
 
   .addLabel('handAnimation', 2)
   .to('#armhandle', 2, { rotation: 0, y: 0, x: 0, ease: Power4.easeOut }, "handAnimation")
-  .to('#arm', 0.6, { scale: 1, x: 0, y: 0, rotation: 0, ease: "none" }, "handAnimation+=0.2")
-  .to('#arm', 0.6, { scale: 0.4, x: -30, y: 80, rotation: 90, ease: "none" }, "handAnimation+=0.8")
-  .from('#basketball', 0.7, { x: "-=60", y: "-=30", rotation: 50, ease: "none" }, "handAnimation+=0.2")
-  .to('#basketball', 0.9, { scale: 0.7, x: "+=33", y: "+=150", rotation: -20, ease: "none" }, "handAnimation+=0.9")
+  .to('#arm', 0.5, { scale: 1, x: 0, y: 0, rotation: 0, ease: "none" }, "handAnimation+=0.2")
+  .to('#arm', 0.5, { scale: 0.4, x: -30, y: 80, rotation: 90, ease: "none" }, "handAnimation+=0.6")
+  .from('#basketball', 0.6, { x: "-=60", y: "-=30", rotation: 50, ease: "none" }, "handAnimation+=0.2")
+  .to('#basketball', 0.8, { scale: 0.7, x: "+=33", y: "+=150", rotation: -20, ease: "none" }, "handAnimation+=0.8")
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut})
 
   // Move the inner blue box up

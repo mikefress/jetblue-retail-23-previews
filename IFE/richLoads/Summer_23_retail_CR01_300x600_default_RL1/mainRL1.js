@@ -57,13 +57,9 @@ myFT.on('instantads',function(){
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
-        document.getElementById('partner_logo_container').style.width = '0px'
       }else{
         //partner logo included in feed
         console.log('partner logo included!')
-        document.getElementById('logoHolder').style.justifyContent = 'space-between'
-        document.getElementById('partner_logo_container').style.width = '108px'
-
 
         var partner_logo_img = myFT.$("#partner_logo_img");
         partner_logo_img[0].src=partner_logo_src;
