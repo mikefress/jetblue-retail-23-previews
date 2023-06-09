@@ -115,7 +115,6 @@ function animate() {
   window.parent.document.getElementById("border").style.borderColor="#000"
 
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
-  tl.set(["#seatBase"], { scale: 1.15, force3D: true });
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
