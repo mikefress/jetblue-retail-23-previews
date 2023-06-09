@@ -1,0 +1,336 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #0000AA;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 160px;
+  height: 600px;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 160px;
+  height: 600px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: 0px;
+  left: 0px;
+  width: 160px;
+  height: 600px;
+  z-index: 500;
+}
+
+/* Custom Styling */
+
+/* Fonts */
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+}
+
+#text_holder {
+  color: #FFFFFF;
+  font-family: "ESKlarheitGrotesk Xbd";
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#cardtext_holder {
+  color: #FFFFFF;
+  font-family: "ESKlarheitGrotesk Xbd";
+  font-size: 22px;
+  line-height: 23px;
+}
+
+#endframeBg {
+  position: absolute; 
+  top: 451px;
+  height: 600px;
+  width: 100%; 
+  background: #FFFFFF;
+}
+
+#pinkRibbon {
+  position: relative; 
+  top: 0px;
+  height: 9px;
+  width: 100%; 
+  background: #FC3388;
+}
+
+#blueBottomCard {
+  background-color: #000064;
+  width: 160px;
+  height: 140px;
+  left: 0px;
+  top: 460px;
+}
+
+.blue {
+  color: #0033A0;
+}
+
+#h1,
+#h2,
+#h3 {
+  width: 120px;
+  left: 10px;
+  top: 40px;
+}
+
+#h3 {
+  font-size: 18px;
+  line-height: 22px;
+  text-shadow: 1px 1px 3px #0000AA;
+}
+
+#h3 .asterisk {
+  font-size: 11px;
+  line-height: 23px;
+  top: -7px;
+  position: relative;
+}
+
+/* terms and logo text */
+
+.terms {
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 7px;
+  line-height: 9px;
+  left: 15px;
+  width: 250px;
+}
+
+#terms1, #termsCopyright{
+  top: 577px;
+}
+
+#logoHolder {
+  /* width: 260px;
+  height: 29px;
+  left: 20px;
+  top: 195px; */
+  width: 77px;
+  height: 76px;
+  left: 42px;
+  top: 477px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+#logoHolder > *{
+  position: relative
+}
+
+#logo {
+  width: 66px;
+  height: auto;
+}
+
+#partner_logo_container{
+  width: 0;
+  height: 48px;
+  z-index: 1501;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+#partner_logo_img{
+  width: 65px;
+  height: 48px;
+  object-fit: contain;
+  object-position: left;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+
+/* Creative */
+
+#plane {
+  left: 7px;
+  top: 244px;
+}
+
+.scaleSmall{
+  transform: scale(0.6)
+}
+
+/* background clouds */
+
+#cloudA {
+  left: 72px;
+  top: 387px;
+}
+
+#cloudB {
+  left: 85px;
+  top: 167px;
+}
+
+#cloudC {
+  left: 107px;
+  top: 124px;
+}
+
+#cloudD {
+  left: 138px;
+  top: 216px;
+}
+
+#cloudE {
+  left: 131px;
+  top: 404px;
+}
+
+#cloudF {
+  left: 292px;
+  top: 356px;
+}
+
+#cloudG {
+  left: 288px;
+  top: 308px;
+}
+
+#cloudH {
+  left: 367px;
+  top: 398px;
+}
+
+#cloudI {
+  left: 445px;
+  top: 151px;
+}
+
+#cloudJ {
+  left: 578px;
+  top: 201px;
+}
+
+#cloudK {
+  left: 529px;
+  top: 381px;
+}
+
+#emojiA {
+  left: 173px;
+  top: 142px;
+}
+
+#emojiB {
+  left: 330px;
+  top: 345px;
+}
+
+#emojiC {
+  left: 425px;
+  top: 177px;
+}
+
+#emojiD {
+  left: 660px;
+  top: 330px;
+}
+
+/* foreground clouds */
+
+
+#cloudL {
+  left: 263px;
+  top: 388px;
+}
+
+#cloudM {
+  left: 324px;
+  top: 125px;
+}
+
+#cloudN {
+  left: 520px;
+  top: 405px;
+}
+
+#cloudO {
+  left: 573px;
+  top: 354px;
+}
+
+#cloudP {
+  left: 808px;
+  top: 139px;
+}
+
+#cloudQ {
+  left: 808px;
+  top: 139px;
+}
+
+#emojiL {
+  left: 99px;
+  top: 317px;
+}
+
+#emojiM {
+  left: 420px;
+  top: 160px;
+}
+
+#emojiN {
+  left: 731px;
+  top: 316px;
+}
+
+#emojiO {
+  left: 1050px;
+  top: 185px;
+}
