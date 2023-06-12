@@ -220,7 +220,8 @@ video {
 
 #emojiM {
   left: 629px;
-  top: 179px;
+  top: 184px;
+  transform: scale(0.9);
 }
 
 #emojiN {
