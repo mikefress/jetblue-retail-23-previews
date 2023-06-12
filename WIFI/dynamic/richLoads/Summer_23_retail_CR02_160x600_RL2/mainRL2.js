@@ -101,6 +101,7 @@ myFT.on('theFeedLoaded', function(e) {
 
 //@FT Feed data callback function
 function feedLoaded(feed){
+  console.log(feed)
   if(!thisFeedLoaded){
     thisFeedLoaded=true;
     try{

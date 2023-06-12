@@ -121,29 +121,24 @@ function animate() {
 
   // distant clouds move
   .to(['.backgroundCloud'], 11, { x: -400, ease: "none" }, 'frame1')
-  .to(['.foregroundCloud'], 11, { x: -1200, ease: "none" }, 'frame1')
+  .to(['.foregroundCloud'], 11, { x: -750, ease: "none" }, 'frame1')
 
-  .from('#emojiA', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=1')
-  .from('#emojiB', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=5.8')
-  .from('#emojiC', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=8.5')
-  .from('#emojiD', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=10')
+  .from('#emojiA', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=1')
+  .from('#emojiB', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.8')
+  .from('#emojiC', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
+  .from('#emojiD', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=10')
 
-  .from('#emojiL', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=0.2')
-  .from('#emojiM', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=3.0')
-  .from('#emojiN', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=5.5')
-  .from('#emojiO', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=9')
+  .from('#emojiL', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=0.4')
+  .from('#emojiM', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=3.0')
+  .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=7.5')
+  .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=9.8')
 
   .addLabel('frame2', "frame1+=.75")
-  .from('#plane', 1, { x: -300, ease: Power2.easeOut}, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
-  .to('#plane', 1, { y: -5, ease: Power2.easeInOut}, 'frame2+=2.0')
 
-  .addLabel('frame3', "frame2+=3")
+  .addLabel('frame3', "frame2+=4")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
-  .to('#plane', 1, { y: 5, ease: Power2.easeInOut}, 'frame3+=2.0')
   .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
-
-  .to('#plane', 1, { y: 0, ease: Power2.easeInOut}, 'frame3+=5.0')
   
   .addLabel('frame_END', "frame1+=10.3")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
