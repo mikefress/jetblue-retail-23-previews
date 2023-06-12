@@ -207,103 +207,31 @@ video {
 }
 
 /* background clouds */
-
-#cloudA {
-  left: 71px;
-  top: 127px;
-}
-
-#cloudB {
-  left: 231px;
-  top: 61px;
-}
-
-#cloudC {
-  left: 375px;
-  top: 129px;
-}
-
-#cloudD {
-  left: 330px;
-  top: 57px;
-}
-
-#cloudE {
-  left: 406px;
-  top: 142px;
-}
-
-#cloudF {
-  left: 587px;
-  top: 143px;
-}
-
-#cloudG {
-  left: 540px;
-  top: 152px;
-}
-
-#cloudH {
-  left: 815px;
-  top: 143px;
-}
-
-#cloudI {
-  left: 868px;
-  top: 155px;
-}
-
 #emojiA {
-  left: 217px;
-  top: 115px;
+  left: 149px;
+  top: 114px;
 }
 
 #emojiB {
-  left: 417px;
-  top: 58px;
+  left: 291px;
+  top: 47px;
 }
 
 #emojiC {
-  left: 688px;
-  top: 128px;
+  left: 534px;
+  top: 47px;
 }
 
-#emojiD {
-  left: 613px;
-  top: 56px;
-}
+/* #emojiD {
+  left: 621px;
+  top: 125px;
+} */
 
 /* foreground clouds */
 
-
-#cloudL {
-  left: 87px;
-  top: 138px;
-}
-
-#cloudM {
-  left: 680px;
-  top: 66px;
-}
-
-#cloudN {
-  left: 807px;
-  top: 67px;
-}
-
-#cloudO {
-  left: 950px;
-  top: 126px;
-}
-
-#cloudP {
-  left: 1135px;
-  top: 67px;
-}
-
 #emojiL {
   left: 279px;
-  top: 36px;
+  top: 38px;
 }
 
 #emojiM {
@@ -312,11 +240,13 @@ video {
 }
 
 #emojiN {
-  left: 590px;
-  top: 93px;
+  left: 595px;
+  top: 110px;
+  transform: scale(0.8)
 }
 
 #emojiO {
-  left: 889px;
-  top: 93px;
+  left: 866px;
+  top: 115px;
+  transform: scale(0.8)
 }
