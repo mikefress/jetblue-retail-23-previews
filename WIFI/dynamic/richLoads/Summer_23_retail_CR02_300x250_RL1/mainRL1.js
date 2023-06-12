@@ -118,7 +118,7 @@ function animate() {
 
   .from('#emojiL', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=1.0')
   .from('#emojiM', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=2.5')
-  .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.9')
+  .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.6')
   .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
 
   .addLabel('frame2', "frame1+=.75")

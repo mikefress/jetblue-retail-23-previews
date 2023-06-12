@@ -208,7 +208,7 @@ video {
 
 /* background clouds */
 #emojiA {
-  left: 149px;
+  left: 169px;
   top: 114px;
 }
 
@@ -235,18 +235,18 @@ video {
 }
 
 #emojiM {
-  left: 361px;
+  left: 381px;
   top: 126px;
 }
 
 #emojiN {
-  left: 595px;
-  top: 110px;
-  transform: scale(0.8)
+  left: 565px;
+  top: 112px;
+  transform: scale(0.75)
 }
 
 #emojiO {
   left: 866px;
-  top: 115px;
-  transform: scale(0.8)
+  top: 118px;
+  transform: scale(0.7)
 }
