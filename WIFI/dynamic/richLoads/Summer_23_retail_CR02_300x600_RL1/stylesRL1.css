@@ -185,14 +185,14 @@ video {
 }
 
 .scaleSmall{
-  transform: scale(0.6)
+  transform: scale(0.4)
 }
 
 /* background clouds */
 
 #emojiA {
   left: 129px;
-  top: 174px;
+  top: 170px;
 }
 
 #emojiB {
@@ -208,7 +208,6 @@ video {
 #emojiD {
   left: 721px;
   top: 380px;
-  transform: scale(0.4);
 }
 
 /* foreground clouds */
@@ -220,9 +219,8 @@ video {
 }
 
 #emojiM {
-  left: 589px;
+  left: 629px;
   top: 179px;
-  transform: scale(0.8);
 }
 
 #emojiN {
