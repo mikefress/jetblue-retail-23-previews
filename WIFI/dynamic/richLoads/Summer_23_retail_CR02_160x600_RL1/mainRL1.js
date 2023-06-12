@@ -123,20 +123,19 @@ function animate() {
   .to(['.backgroundCloud'], 11, { x: -400, ease: "none" }, 'frame1')
   .to(['.foregroundCloud'], 11, { x: -750, ease: "none" }, 'frame1')
 
-  .from('#emojiA', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=1')
+  .from('#emojiA', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=0.8')
   .from('#emojiB', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.8')
   .from('#emojiC', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
-  .from('#emojiD', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=10')
 
   .from('#emojiL', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=0.4')
   .from('#emojiM', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=3.0')
   .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=7.5')
-  .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=9.8')
 
   .addLabel('frame2', "frame1+=.75")
+  .from('#plane', 1.5, { x: -160, ease: "none"}, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
 
-  .addLabel('frame3', "frame2+=4")
+  .addLabel('frame3', "frame2+=4.5")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
   .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
   
