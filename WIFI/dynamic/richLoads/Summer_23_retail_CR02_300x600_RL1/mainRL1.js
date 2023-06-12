@@ -111,27 +111,25 @@ function animate() {
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
 
   // distant clouds move
-  .to(['.backgroundCloud'], 11, { x: -700, ease: "none" }, 'frame1')
-  .to(['.foregroundCloud'], 11, { x: -1800, ease: "none" }, 'frame1')
+  .to(['.backgroundCloud'], 11, { x: -500, ease: "none" }, 'frame1')
+  .to(['.foregroundCloud'], 11, { x: -950, ease: "none" }, 'frame1')
 
-  .from('#emojiA', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=1.3')
-  .from('#emojiB', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=5.8')
-  .from('#emojiC', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=8.5')
-  .from('#emojiD', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=10')
+  .from('#emojiA', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=1.3')
+  .from('#emojiB', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=4.8')
+  .from('#emojiC', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
+  .from('#emojiD', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=10')
 
-  .from('#emojiL', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=0.5')
-  .from('#emojiM', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=4.0')
-  .from('#emojiN', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=6.2')
-  .from('#emojiO', 0.3, {scale: 0, ease: Power4.easeIn}, 'frame1+=9')
+  .from('#emojiL', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=0.5')
+  .from('#emojiM', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=4.0')
+  .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=6.2')
+  .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=9.3')
 
   .addLabel('frame2', "frame1+=.75")
-  .from('#plane', 1, { x: -300, ease: Power2.easeOut}, 'frame2')
+  .from('#plane', 1.5, { x: -300, ease: "none"}, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
-  .to('#plane', 1, { y: -5, ease: Power2.easeInOut}, 'frame2+=2.0')
 
   .addLabel('frame3', "frame2+=3")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
-  .to('#plane', 1, { y: 5, ease: Power2.easeInOut}, 'frame3+=2.0')
   .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
 
   .to('#plane', 1, { y: 0, ease: Power2.easeInOut}, 'frame3+=5.0')
