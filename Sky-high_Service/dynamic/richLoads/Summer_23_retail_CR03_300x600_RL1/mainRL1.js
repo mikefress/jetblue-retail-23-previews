@@ -53,7 +53,7 @@ myFT.on('instantads',function(){
       let partner_logo_src = feedItems[0].image_logo_300x250;
 
       //testing swap between layouts for partner logo
-      partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz_dark.png'
+      // partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz_dark.png'
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
