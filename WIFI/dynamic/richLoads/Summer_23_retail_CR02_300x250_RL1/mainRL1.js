@@ -107,6 +107,7 @@ function animate() {
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
+  .from('#plane', 1.5, { x: -300, ease: "none"}, 'frame1')
   // distant clouds move
   .to(['.backgroundCloud'], 11, { x: -400, ease: "none" }, 'frame1')
   .to(['.foregroundCloud'], 11, { x: -800, ease: "none" }, 'frame1')
@@ -122,7 +123,6 @@ function animate() {
   .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
 
   .addLabel('frame2', "frame1+=.75")
-  .from('#plane', 1.5, { x: -300, ease: "none"}, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
 
   .addLabel('frame3', "frame2+=4")

@@ -50,23 +50,16 @@ myFT.on('instantads',function(){
     called 'theFeedLoaded'.
     */
     function feedLoaded(feedItems) {
-      // adjust logo size and positioning for partner logo
-      // change includes to be simple if(partner_logo_src=="n/a") and follow same logic below
-
       let partner_logo_src = feedItems[0].image_logo_300x250;
 
       //testing swap between layouts for partner logo
-      partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Stacked.png'
+      partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
-        document.getElementById('partner_logo_container').style.height = '0px'
       }else{
         //partner logo included in feed
         console.log('partner logo included!')
-        document.getElementById('logoHolder').style.justifyContent = 'space-between'
-        document.getElementById('partner_logo_container').style.width = '77px'
-
 
         var partner_logo_img = myFT.$("#partner_logo_img");
         partner_logo_img[0].src=partner_logo_src;
@@ -106,43 +99,37 @@ function init() {
   tl = new TimelineMax();
 
   animate();
-  setRollover();
 
 }
 
 function animate() {
   //make parent (base file) border black
-  window.parent.document.getElementById("border").style.borderColor="#000"
 
-  tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
+  tl.set(["#main_content"], { autoAlpha: 1, rotation: 0.01, force3D: true });
+  tl.set('#badge', { scale: 0.2 })
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
-  .from('#plane', 1.5, { x: -160, ease: "none"}, 'frame1')
 
-  // distant clouds move
-  .to(['.backgroundCloud'], 11, { x: -400, ease: "none" }, 'frame1')
-  .to(['.foregroundCloud'], 11, { x: -750, ease: "none" }, 'frame1')
+  // globe "rotates"
+  .to('#countries', 8, { x: -100, y: 10, ease: "none" }, 'frame1')
+  .to('#plane', 6, { x: 170, y: -100, ease: Power1.easeInOut }, 'frame1+=0.5')
 
-  .from('#emojiA', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=1.2')
-  .from('#emojiB', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.8')
-  .from('#emojiC', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
-
-  .from('#emojiL', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=0.3')
-  .from('#emojiM', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=3.0')
-  .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=7.5')
-
-  .addLabel('frame2', "frame1+=.75")
+  .addLabel('frame2', 'frame1+=2.5')
+  .to('#badge', 0.75, { autoAlpha: 1, scale: 1, ease: 'none'}, 'frame2')
+  .to('#globeHolder', 0.75, { scale: 0.29, ease: 'none'}, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
+  .to('#nametag', 1, { autoAlpha: 1, ease: "none"}, 'frame2+=3')
 
-  .addLabel('frame3', "frame2+=4.5")
-  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
-  .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
+
+  .addLabel('frame3', "frame2+=4")
+  .to('#badgeHolder', 2, { scale: 0.12, x:29, y:72, ease: "none" }, 'frame3')
+  .to('#crewMember', 2, { scale: 1, ease: 'none' }, 'frame3')
+
   
-  .addLabel('frame_END', "frame1+=10.3")
+  .addLabel('frame_END', "frame3+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
-
+   
 
     ////////////////////////////////////////
     //@FT2 code block start
@@ -161,20 +148,6 @@ function playEndframe(param1){
 ////////////////////////////////////////
 
 
-// CTA grow on hover
-
-function setRollover() {
-  document.getElementById('default_exit').addEventListener('mouseover', defaultOver, false);
-  document.getElementById('default_exit').addEventListener('mouseout', defaultOut, false);
-}
-
-function defaultOver() {
-  TweenMax.to('#cta', 0.25, { scale: 1.05, ease: Power1.easeInOut })
-}
-
-function defaultOut() {
-  TweenMax.to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
-}
 ////////////////////////////////////////
 //@FT4 code block start
 

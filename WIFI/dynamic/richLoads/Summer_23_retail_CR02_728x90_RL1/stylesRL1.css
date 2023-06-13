@@ -256,19 +256,19 @@ video {
 
 /* foreground clouds */
 
-#emojiL {
+/* #emojiL {
   left: 555px;
   top: 44px;
   transform: scale(0.7);
-}
+} */
 
 #emojiM {
-  left: 1035px;
+  left: 1105px;
   top: 55px;
   transform: scale(0.7);
 }
 
-#emojiN {
+/* #emojiN {
   left: 812px;
   top: 313px;
   transform: scale(0.8);
@@ -277,4 +277,4 @@ video {
 #emojiO {
   left: 1088px;
   top: 355px;
-}
+} */
