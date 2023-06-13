@@ -78,7 +78,7 @@ video {
 }
 
 #cardtext_holder {
-  color: #FFFFFF;
+  color: #0000AA;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 22px;
   line-height: 23px;
@@ -101,7 +101,7 @@ video {
 }
 
 #blueBottomCard {
-  background-color: #000064;
+  background-color: #00E1FF;
   width: 100%;
   height: 131px;
   left: 0px;
@@ -195,6 +195,11 @@ video {
   transform-origin: 50% 60.5%;
 }
 
+#badge {
+  width: 300px;
+  height: 600px;
+}
+
 #badgeHolder {
   width: 300px;
   height: 458px;
@@ -206,6 +211,8 @@ video {
 }
 
 #nametag {
+  width: 300px;
+  height: 600px;
   transform: scale(9);
   transform-origin: 61% 51.8%;
 }

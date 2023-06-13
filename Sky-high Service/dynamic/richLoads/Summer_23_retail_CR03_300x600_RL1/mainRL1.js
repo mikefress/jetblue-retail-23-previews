@@ -118,21 +118,24 @@ function animate() {
   .addLabel('frame2', 'frame1+=2.5')
   .to('#badge', 0.75, { autoAlpha: 1, scale: 1, ease: 'none'}, 'frame2')
   .to('#globeHolder', 0.75, { scale: 0.29, ease: 'none'}, 'frame2')
-  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
-  .to('#nametag', 1, { autoAlpha: 1, ease: "none"}, 'frame2+=3')
+  .staggerFrom(['#wingRightTop', '#wingRightMid', '#wingRightBottom'], 0.3, {scale: 0.5, y: -20, autoAlpha: 0}, 0.2, 'frame2+=0.75')
+  .staggerFrom(['#wingLeftTop', '#wingLeftMid', '#wingLeftBottom'], 0.3, {scale: 0.5, y: -20, autoAlpha: 0}, 0.2, 'frame2+=0.75')
+  .to('#nameTagMask', 0.4, { y: 8, ease: 'none'}, 'frame2+=2')
+  .to('#nameTagMask', 0.1, { autoAlpha: 0, ease: 'none'})
 
 
-  .addLabel('frame3', "frame2+=4")
-  .to('#badgeHolder', 2, { scale: 0.12, x:29, y:72, ease: "none" }, 'frame3')
-  .to('#crewMember', 2, { scale: 1, ease: 'none' }, 'frame3')
+  .addLabel('frame3', "frame2+=2")
+  .to('#badgeHolder', 1.5, { scale: 0.12, x:29, y:72, ease: "none" }, 'frame3')
+  .to('#crewMember', 1.5, { scale: 1, ease: 'none' }, 'frame3')
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.3')
 
   
   .addLabel('frame_END', "frame3+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
    
 
-    ////////////////////////////////////////
-    //@FT2 code block start
+  //   ////////////////////////////////////////
+  //   //@FT2 code block start
     .call(playEndframe, ["param1"], "frame_END")
     //@FT2 code block end
     ////////////////////////////////////////
