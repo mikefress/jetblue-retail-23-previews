@@ -112,8 +112,8 @@ function animate() {
   .to(['#sun', '#window'], 3, { y: 0, ease: "none" }, "frame1")
 
   .addLabel('frame2', 'frame1+=3')
-  .to(['#backgroundClouds'], 15, { x: -500, ease: "none" }, 'frame2')
-  .to(['#foregroundClouds'], 15, { x: -850, ease: "none" }, 'frame2')
+  .to(['#backgroundClouds'], 15, { x: -250, ease: "none" }, 'frame2')
+  .to(['#foregroundClouds'], 15, { x: -400, ease: "none" }, 'frame2')
   .to('.beach', 1.5, { y: 300, ease: "none" }, "frame2")
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame2+=0.5")
   .to('#window', 1, { autoAlpha: 1, ease: "none" }, "frame2+=0.5")
