@@ -63,9 +63,9 @@ function setupContent() {
 
 
   if (showDefault) {
-    h4[0].innerHTML = 'Enjoy free live<br>TV and sports<br>at every seat.<span class="asterisk">&ast;</span>'; // - Populates main headline
+    h4[0].innerHTML = 'Fly with Jetblue.</span>'; // - Populates main headline
     h4[0].classList.add('defaultEndframe')
-    terms[0].innerHTML = '<span class="asterisk">&ast;</span>Coverage may vary by aircraft.'
+    terms[0].style.display = 'none';
     price[0].style.display = 'none';
     startingAt[0].style.display = 'none';
 
