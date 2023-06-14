@@ -179,7 +179,7 @@ video {
 
 /* Creative */
 
-#sun, #window {
+#window {
   transform: translateY(60px)
 }
 
@@ -193,5 +193,5 @@ video {
   left: 115px;
   top: 212px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 26px;
 }
