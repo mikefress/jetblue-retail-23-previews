@@ -53,7 +53,7 @@ function animate() {
   
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
-  .from('#plane', 2, { x: -100, y: 80, ease: Power2.easeOut}, 'frame1')
+  .from('#plane', 2, { y: 85, ease: Power2.easeOut}, 'frame1')
   .from('#cloudFade', 0.2, { x: -100, ease: Power1.easeOut}, 'frame1+=1')
 
   // distant clouds move
