@@ -53,6 +53,8 @@ function animate() {
   //make parent (base file) border black
 
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
+  tl.set('#window', { x: '+=2' });
+  tl.set('#sun', { x: '+=0.5' });
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')

@@ -215,7 +215,8 @@ video {
 /* Creative */
 
 #window {
-  transform: translateY(60px)
+  width: 34px;
+  transform: translate(2px, 60px)
 }
 
 #chair {
@@ -231,7 +232,7 @@ video {
 #cloudHolder {
   width: 33px;
   height: 43.5px;
-  left: 63.5px;
+  left: 63px;
   top: 275.5px;
   overflow: hidden;
   border-radius: 16px;
