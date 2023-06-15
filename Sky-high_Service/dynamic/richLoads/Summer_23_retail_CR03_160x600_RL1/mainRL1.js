@@ -135,15 +135,15 @@ function animate() {
   .addLabel('frame3', "frame2+=2")
   .to('#badgeHolder', 1.5, { scale: 0.12, x:16, y:70, ease: "none" }, 'frame3')
   .to('#crewMember', 1.5, { scale: 1, ease: 'none' }, 'frame3')
-  // .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.3')
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.3')
 
   
   .addLabel('frame_END', "frame3+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
    
 
-  //   ////////////////////////////////////////
-  //   //@FT2 code block start
+    ////////////////////////////////////////
+    //@FT2 code block start
     .call(playEndframe, ["param1"], "frame_END")
     //@FT2 code block end
     ////////////////////////////////////////

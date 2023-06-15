@@ -69,14 +69,14 @@ video {
 #text_holder {
   color: #FFFFFF;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 20px;
+  font-size: 19px;
   line-height: 25px;
 }
 
 #cardtext_holder {
   color: #0000AA;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 22px;
+  font-size: 19px;
   line-height: 23px;
 }
 
@@ -111,9 +111,9 @@ video {
 #h1,
 #h2,
 #h3 {
-  width: 120px;
+  width: 140px;
   left: 10px;
-  top: 40px;
+  top: 87px;
 }
 
 #h3 {
