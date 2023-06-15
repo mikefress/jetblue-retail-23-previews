@@ -105,8 +105,8 @@ function feedLoaded(feed){
     try{
 
         lowestfare_faredollaramount = feed[0].lowestfare_faredollaramount;
-        origin_longform = feed[0].origin_longform;
-        destination_longform = feed[0].destination_longform;        
+        origin_longform = feed[0].origin_formatted;
+        destination_longform = feed[0].destination_formatted;        
         ctURL = checkURL(myFT.instantAds.Retail_dynamic_clickTag_URL) ? myFT.instantAds.Retail_dynamic_clickTag_URL : feedItems[0]['url'];
 
         if(lowestfare_faredollaramount == "0"){

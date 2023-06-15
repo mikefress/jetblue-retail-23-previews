@@ -117,14 +117,13 @@ function animate() {
 
   tl.addLabel('frame2', 'frame1+=3')
   .to('#plane', 1, {scale: 0.0595, x: "-40", ease: Power1.easeIn}, 'frame2')
-  .to(['.backgroundCloud'], 1, { scale: 1.1, ease: "none" }, 'frame2')
-  .to(['.foregroundCloud'], 1, { scale: 1.4, ease: "none" }, 'frame2')
+  // .to(['.backgroundCloud'], 1, { scale: 1.1, ease: "none" }, 'frame2')
+  // .to(['.foregroundCloud'], 1, { scale: 1.4, ease: "none" }, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
 
   .addLabel('frame3', "frame2+=3")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3+=1.0')
-  .to(['.foregroundCloud'], 1, { scale: 5, ease: "none" }, 'frame3')
-  .to(['.foregroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
+  .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
   .to('#plane', 1, {scale: 1, x: 0, ease: Power1.easeIn}, 'frame3')
   .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1')
 
