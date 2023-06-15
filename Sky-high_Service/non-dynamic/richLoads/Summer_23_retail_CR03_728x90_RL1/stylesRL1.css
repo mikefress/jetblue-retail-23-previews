@@ -129,7 +129,8 @@ video {
   line-height: 24px;
   width: 226px;
   left: 21px;
-  top: 19px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #h3 .asterisk {
