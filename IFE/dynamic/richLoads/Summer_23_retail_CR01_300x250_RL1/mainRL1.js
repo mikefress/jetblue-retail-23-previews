@@ -126,10 +126,10 @@ function animate() {
 
 
   .addLabel('handAnimation', 2)
-  .to('#armhandle', 2, { rotation: 0, y: -30, x: -20, ease: Power4.easeOut }, "handAnimation")
-  .to('#arm', 1, { scale: 0.5, x: 0, y: 180, rotation: 70, ease: "none" }, "-=1.8")
-  .to('#basketball', 0.7, { scale: 0.9, x: 42, y: 55, rotation: 50, ease: "none" }, "-=1.8")
-  .to('#basketball', 0.8, { scale: 1, y: 130, rotation: -20, ease: "none" }, "-=1.1")
+  .to('#armhandle', 2, { rotation: 0, y: -90, x: -20, ease: Power4.easeOut }, "handAnimation")
+  .to('#arm', 1, { scale: 0.8, x: 0, y: 240, rotation: 70, ease: "none" }, "-=1.8")
+  .to('#basketball', 0.7, { scale: 0.9, x: 42, y: 115, rotation: 50, ease: "none" }, "-=1.8")
+  .to('#basketball', 0.8, { scale: 1, y: 190, rotation: -20, ease: "none" }, "-=1.1")
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut})
 
   // Move the inner blue box up
