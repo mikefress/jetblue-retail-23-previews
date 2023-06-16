@@ -8,12 +8,12 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <meta name="ad.size" content="width=300,height=250" />
-  
+    <meta name="ad.size" content="width=160,height=600" />
+
     <link rel="stylesheet" type="text/css" href="stylesRL1.css" />
 
     <script 
-      type="text/javascript"
+      type="text/javascript" 
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js">
     </script>
 
@@ -22,10 +22,12 @@
 
   <body>
     <div id="main_container">
-      <!--start main_content-->
-      <div id="main_content">
+      <!--start main_container-->
 
-        <!-- creative -->
+      <div id="main_content" class="">
+        <!--start main_content-->
+
+        <!-- Creative -->
 
         <!-- background clouds -->
         <img src="images/backgroundClouds.svg" id="foregroundClouds" class="backgroundCloud">
@@ -40,7 +42,7 @@
 
         <div id="text_holder">
           <div id="h1" class="hidden">More Blue <span id="h2" class="hidden"><br>for your buck.</span></div>
-          <div id="h3" class="hidden">Enjoy fast, free wi-fi<span id="firstAsterisk" class="asterisk">&ast;</span>and<br/>the most legroom in coach,<span class="asterisk">&ast;&ast;</span><br>all for a low fare</div>
+          <div id="h3" class="hidden">Enjoy fast,<br/>free wi-fi<span id="firstAsterisk" class="asterisk">&ast;</span><br/>and the most<br/>legroom in<br/>coach,<span class="asterisk">&ast;&ast;</span><br>all for<br/>a low fare</div>
         </div>
 
         <div id="endframeBg">
@@ -49,11 +51,9 @@
 
         <div id="blueBottomCard"></div>
         <div id="cardtext_holder">
-          <div id="terms-wrapper">
-            <span id="termsCopyright" class="terms">&copy; 2023 JetBlue Airways</span>
-            <span id="terms1" class="hidden terms"><span class="asterisk">&ast;</span>Coverage may vary by aircraft.</span>
-            <span id="terms2" class="hidden terms"><span class="asterisk">&ast;&ast;</span>Based on the avg. fleet wide seat pitch of US airlines.</span>
-          </div>
+          <div id="termsCopyright" class="terms">&copy; 2023 JetBlue Airways</div>
+          <div id="terms1" class="hidden terms"><br><span class="asterisk">&ast;</span>Coverage may vary by aircraft.<br/></div>
+          <div id="terms2" class="hidden terms"><br><br><span class="asterisk">&ast;&ast;</span>Based on the avg. fleet wide seat pitch of US airlines.<br/></div>
           <div id="logoHolder">
             <img id="logo" src="./images/logo.svg" class="" />
             <div id="partner_logo_container">
@@ -62,7 +62,6 @@
           </div>
         </div>
 
-      </div>
         <!--end main_content-->
       </div>
 
@@ -71,5 +70,6 @@
       <!--end main_container-->
     </div>
     <script type="text/javascript" src="mainRL1.js"></script>
+   
   </body>
 </html>
