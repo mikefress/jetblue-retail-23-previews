@@ -137,7 +137,7 @@ function animate() {
   .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.5')
 
   .addLabel('frame4', "frame3+=1.5")
-  .to('#plane', 4, { x: 270, ease: Power1.easeInOut}, 'frame4')
+  .to('#plane', 7, { x: 0, ease: Power1.easeInOut}, 'frame4')
 
   .addLabel('frame_END', "frame4+=5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')

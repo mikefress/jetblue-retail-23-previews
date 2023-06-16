@@ -150,7 +150,7 @@ video {
   left: 20px;
   top: 195px; */
   width: 77px;
-  height: 76px;
+  height: 72px;
   left: 42px;
   top: 477px;
   display: flex;
@@ -165,13 +165,15 @@ video {
 }
 
 #logo {
-  width: 66px;
-  height: auto;
+  width: 76px;
+  height: 25px;
+  object-fit: contain;
+  object-position: center;
 }
 
 #partner_logo_container{
   width: 0;
-  height: 48px;
+  height: 31px;
   z-index: 1501;  
   display: flex;
   align-items: center;
@@ -180,10 +182,10 @@ video {
 }
 
 #partner_logo_img{
-  width: 65px;
-  height: 48px;
+  width: 77px;
+  height: 31px;
   object-fit: contain;
-  object-position: left;
+  object-position: center;
 }
 
 :focus {

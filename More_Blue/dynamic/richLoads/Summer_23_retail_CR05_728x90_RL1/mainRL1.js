@@ -107,39 +107,38 @@ function init() {
 }
 
 function animate() {
-  tl.set(["#main_content"], { autoAlpha: 1, rotation: 0.01, force3D: true });
+  tl.set(["#main_content"], { autoAlpha: 1, rotation: 0.01, force3D: true })
+    .set(['.backgroundCloud'], { y: 0, x: -250, transformOrigin: '100% 50%' });
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
   .from('#plane', 1.2, { x: -300, ease: "sine.out"}, 'frame1')
 
   // distant clouds move
-  .to(['.backgroundCloud'], 11, { x: -500, ease: "none" }, 'frame1')
-  .to(['.foregroundCloud'], 11, { x: -950, ease: "none" }, 'frame1')
+  .to(['.backgroundCloud'], 11, { x: "-=250", ease: "none" }, 'frame1')
 
   tl.addLabel('frame2', 'frame1+=3')
   .to('#plane', 1, {scale: 0.1492, x: "-=120", y: "+=10", ease: Power1.easeIn}, 'frame2')
   .to(['.backgroundCloud'], 1, { scale: 1.1, ease: "none" }, 'frame2')
-  .to(['.foregroundCloud'], 1, { scale: 1.4, ease: "none" }, 'frame2')
   .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
 
   .addLabel('frame3', "frame2+=3")
   .to('#plane', 1, {scale: 1, x: 0, ease: Power1.easeIn}, 'frame3')
   .to(['#h1', '#h2'], 0.5, { color: '#0000AA', ease: Power1.easeIn }, 'frame3+=0.25')
-  .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=0.5')
+  .to(['.backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=0.5')
   .to(['#h1', '#h2', '#plane'], 0.5, { autoAlpha: 0, ease: Power1.easeOut }, 'frame3+=2')
   .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=2.5')
 
   .addLabel('frame4', "frame3+=2")
 
   .addLabel('frame_END', "frame1+=10.4")
-  // .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  // .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
+  .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
+  .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
 
 
     ////////////////////////////////////////
     //@FT2 code block start
-    // .call(playEndframe, ["param1"], "frame_END")
+    .call(playEndframe, ["param1"], "frame_END")
     //@FT2 code block end
     ////////////////////////////////////////
 
