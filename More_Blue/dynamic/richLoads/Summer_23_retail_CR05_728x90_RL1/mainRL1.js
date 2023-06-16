@@ -129,7 +129,7 @@ function animate() {
   .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
   .to(['#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.75')
 
-  .addLabel('frame4', "frame3+=1.25")
+  .addLabel('frame4', "frame3+=0.75")
 
   .addLabel('frame_END', "frame1+=10.4")
   .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
