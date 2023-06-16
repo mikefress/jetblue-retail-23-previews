@@ -123,9 +123,9 @@ video {
 }
 
 #h3 {
-  width: 242px;
+  width: 500px;
   left: 21px;
-  top: 7px;
+  top: 23px;
   font-size: 19px;
   line-height: 21px;
 }
@@ -140,18 +140,28 @@ video {
 
 /* terms and logo text */
 
-#terms-wrapper {
-  position: absolute;
-  top: 215px;
-  left: 21px;
-  width: 250px;
-}
-
 .terms {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 9px;
   color: #FFFFFF;
+  display: inline-block;
+  top: 77px;
+}
+
+#terms1 {
+  left: 21px;
+}
+
+#terms2 {
+  left: 131px;
+}
+
+#termsCopyright {
+  top: 77px;
+  right: 18px;
+  left: auto;
+  text-align: right;
 }
 
 .terms .asterisk {

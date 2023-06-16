@@ -125,10 +125,10 @@ function animate() {
   .to('#plane', 1, {scale: 1, x: 0, ease: Power1.easeIn}, 'frame3')
   .to(['#h1', '#h2'], 0.5, { color: '#0000AA', ease: Power1.easeIn }, 'frame3+=0.25')
   .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
-  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3+=2')
-  .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=2.5')
+  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3+=1')
+  .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.5')
 
-  .addLabel('frame4', "frame3+=2.5")
+  .addLabel('frame4', "frame3+=1.5")
   .to('#plane', 4, { x: "-=276", ease: Power1.easeInOut}, 'frame4')
 
   .addLabel('frame_END', "frame4+=5")

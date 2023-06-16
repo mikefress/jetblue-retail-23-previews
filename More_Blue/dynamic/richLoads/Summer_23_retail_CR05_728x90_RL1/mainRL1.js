@@ -126,19 +126,20 @@ function animate() {
   .addLabel('frame3', "frame2+=3")
   .to('#plane', 1, {scale: 1, x: 0, ease: Power1.easeIn}, 'frame3')
   .to(['#h1', '#h2'], 0.5, { color: '#0000AA', ease: Power1.easeIn }, 'frame3+=0.25')
-  .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
-  .to(['#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.75')
+  .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=0.5')
+  .to(['#h1', '#h2', '#plane'], 0.5, { autoAlpha: 0, ease: Power1.easeOut }, 'frame3+=2')
+  .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=2.5')
 
-  .addLabel('frame4', "frame3+=0.75")
+  .addLabel('frame4', "frame3+=2")
 
   .addLabel('frame_END', "frame1+=10.4")
-  .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
+  // .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
+  // .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
 
 
     ////////////////////////////////////////
     //@FT2 code block start
-    .call(playEndframe, ["param1"], "frame_END")
+    // .call(playEndframe, ["param1"], "frame_END")
     //@FT2 code block end
     ////////////////////////////////////////
 
