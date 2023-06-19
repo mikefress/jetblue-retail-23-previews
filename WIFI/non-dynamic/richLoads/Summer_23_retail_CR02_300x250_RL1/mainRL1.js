@@ -66,14 +66,10 @@ function animate() {
   .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=5.6')
   .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=8.5')
 
-  .addLabel('frame2', "frame1+=.75")
-  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
-
-  // .addLabel('frame3', "frame2+=4")
-  // .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
-  // .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
-
-  .addLabel('frame_END', "frame1+=10.3")
+  .addLabel('frame2', "frame1+=1")
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2')
+  
+  .addLabel('frame_END', "frame2+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
   .to('#cta', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=1')

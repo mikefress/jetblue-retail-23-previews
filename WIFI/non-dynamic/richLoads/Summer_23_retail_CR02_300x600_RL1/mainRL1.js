@@ -69,12 +69,10 @@ function animate() {
   .from('#emojiN', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=6.2')
   .from('#emojiO', 0.5, {scale: 0, ease: Power1.easeIn}, 'frame1+=9.3')
 
-  .addLabel('frame2', "frame1+=.75")
-  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
-
-  .to('#plane', 1, { y: 0, ease: Power2.easeInOut}, 'frame3+=5.0')
+  .addLabel('frame2', "frame1+=1")
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2')
   
-  .addLabel('frame_END', "frame1+=10.3")
+  .addLabel('frame_END', "frame2+=3.75")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
   .to('#cta', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=1')
