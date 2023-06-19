@@ -70,7 +70,7 @@ video {
 }
 
 #text_holder,
-#h4 {
+#h3 {
   color: #FFFFFF;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 31px;
@@ -114,24 +114,18 @@ video {
 
 #h1,
 #h2,
-#h3,
-#h4 {
+#h3 {
   width: 270px;
   left: 20px;
   top: 43px;
 }
 
-#h3,
-#h4 {
+#h3 {
   color: #0000AA;
-}
-
-#h4 {
   top: 95px;
 }
 
-#h3 .asterisk,
-#h4 .asterisk {
+#h3 .asterisk {
   font-size: 19px;
   line-height: 23px;
   top: -8px;
@@ -139,7 +133,6 @@ video {
   position: relative;
 }
 
-#h3 .firstAsterisk,
 #h3 .firstAsterisk {
   top: -10px;
   left: 0px;

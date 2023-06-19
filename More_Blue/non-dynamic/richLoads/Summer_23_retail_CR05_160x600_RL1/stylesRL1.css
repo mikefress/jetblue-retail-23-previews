@@ -110,14 +110,13 @@ video {
 
 #h1,
 #h2,
-#h3,
-#h4 {
+#h3 {
   width: 140px;
   left: 10px;
   top: 40px;
 }
 
-#h4 {
+#h3 {
   color: #0000AA;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 20px;
@@ -125,8 +124,7 @@ video {
   top: 87px;
 }
 
-#h3 .asterisk,
-#h4 .asterisk {
+#h3 .asterisk {
   font-size: 11px;
   line-height: 23px;
   top: -7px;

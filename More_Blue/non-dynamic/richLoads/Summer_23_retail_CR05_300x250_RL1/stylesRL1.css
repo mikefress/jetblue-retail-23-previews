@@ -77,7 +77,7 @@ video {
 /* Text */
 
 #text_holder,
-#h4 {
+#h3 {
   color: #FFFFFF;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 22px;
@@ -117,8 +117,7 @@ video {
 
 #h1,
 #h2,
-#h3,
-#h4 {
+#h3 {
   width: 260px;
   height: 74px;
   left: 21px;
@@ -126,19 +125,14 @@ video {
   letter-spacing: -0.02em;
 }
 
-#h3,
-#h4 {
+#h3 {
+  top: 25px;
   font-size: 16px;
   line-height: 21px;
   color: #0000AA;
 }
 
-#h4 {
-  top: 25px;
-}
-
-#h3 .asterisk,
-#h4 .asterisk {
+#h3 .asterisk {
   font-size: 11px;
   line-height: 23px;
   top: -7px;

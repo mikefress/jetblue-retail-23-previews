@@ -58,25 +58,24 @@ function animate() {
   .to(['.backgroundCloud'], 11, { x: -500, ease: "none" }, 'frame1')
   .to(['.foregroundCloud'], 11, { x: -950, ease: "none" }, 'frame1')
 
-  tl.addLabel('frame2', 'frame1+=3')
+  tl.addLabel('frame2', 'frame1+=1.5')
   .to('#plane', 1, {scale: 0.1368, x: "-40", ease: Power1.easeIn}, 'frame2')
   .to(['.backgroundCloud'], 1, { scale: 1.1, ease: "none" }, 'frame2')
   .to(['.foregroundCloud'], 1, { scale: 1.4, ease: "none" }, 'frame2')
-  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1.0')
+  .to('#h2', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame2+=1')
 
-  .addLabel('frame3', "frame2+=3")
+  .addLabel('frame3', "frame2+=2")
   .to('#plane', 1, {scale: 1, x: 0, ease: Power1.easeIn}, 'frame3')
   .to(['#h1', '#h2'], 0.5, { color: '#0000AA', ease: Power1.easeIn }, 'frame3+=0.25')
   .to(['.foregroundCloud, .backgroundCloud'], 0, { autoAlpha: 0, ease: "none" }, 'frame3+=1')
-  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3+=1')
-  .to(['#h3', '#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1.5')
-
+  
   .addLabel('frame4', "frame3+=1.5")
-  .to('#plane', 7, { x: "-=500", ease: Power1.easeInOut}, 'frame4')
-
-  .addLabel('frame_END', "frame1+=10.3")
+  .to('#plane', 4, { x: "-=500", ease: Power1.easeInOut}, 'frame4')
+  
+  .addLabel('frame_END', "frame4+=3")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
-  .to('#h4', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
+  .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
+  .to(['#terms1', '#terms2'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
   .to('#cta', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=1')
 }
 
