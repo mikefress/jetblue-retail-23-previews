@@ -221,7 +221,7 @@ video {
   height: 109px;
   left: 95px;
   top: 50px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: #00E1FF;
   overflow: hidden;
 }

@@ -19,6 +19,7 @@ var deploy = true
     origin_longform="",
     lowestfare_faredollaramount="",
     destination_longform="";
+let partner_logo_src;
 
 var price = myFT.$("#price"),
     startingAt = myFT.$("#starting_at"),
@@ -62,21 +63,21 @@ function checkURL(u){
 
 //@FT Feed data callback function
 function feedLoaded(feed){
-  console.log(feed)
   if(!thisFeedLoaded){
     thisFeedLoaded=true;
-    let partner_logo_src = feed[0].image_logo_300x250;
+    partner_logo_src = feed[0].image_logo_300x250;
 
+    // If no partner logo terms should be right-aligned
+    partner_logo_src = feed[0].image_logo_300x250;
     //testing swap between layouts for partner logo
+    // partner_logo_src = 'n/a'
     partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
 
     if(partner_logo_src == "n/a"){
-      //no partner logo included in feed, do nothing
-
-    }else{
-      // document.getElementById('text_holder').style.height = '150px'
-      document.getElementById('terms').style.top = '236px'
-
+      // Terms should be right aligned when no partner logo
+      document.getElementById('terms-mask').classList.add('no-partner');
+    } else {
+      // document.getElementById('terms-mask').style.top = '236px'
     }
     try{
 
@@ -214,12 +215,24 @@ function init() {
 }
 
 function animate() {
+  const termsWidth = document.getElementById('terms').offsetWidth;
   myFT.dispatch('show_RL2');
   tl.set(["#main_content"], { autoAlpha: 1, force3D: true })
   .set(["#cta"], { force3D: true, rotation: .001 })
-  .addLabel('frame_4')
+  if (partner_logo_src === 'n/a') {
+    tl.set('.terms-container', { x: termsWidth - 2 })
+  }
+
+  tl.addLabel('frame_4')
   // .from(['#main_content'], .6, { y:"+=250", ease: Back.easeOut.config(.3)})
-  .staggerTo(['#h4', '#priceHolder', '#cta', '#terms', '#terms_container'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
+  
+  if (partner_logo_src === 'n/a') {
+    tl.staggerTo(['#h4', '#priceHolder', '#cta', '#termsCopyright'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
+    .to('.terms-container', 0.5, { x: 0, ease: Power1.easeOut }, 'frame_4+=2')
+    .to('#terms', 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 'frame_4+=2.5')
+  } else {
+    tl.staggerTo(['#h4', '#priceHolder', '#cta', '#terms'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
+  }
 }
 
 // CTA grow on hover

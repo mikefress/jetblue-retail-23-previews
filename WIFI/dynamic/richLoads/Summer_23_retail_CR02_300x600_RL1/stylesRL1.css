@@ -78,6 +78,7 @@ video {
 }
 
 #cardtext_holder {
+  width: 100%;
   color: #FFFFFF;
   font-family: "ESKlarheitGrotesk Xbd";
   font-size: 22px;
@@ -140,6 +141,12 @@ video {
 
 #terms1, #termsCopyright {
   top: 572px;
+}
+
+.no-partner .terms {
+  left: auto;
+  right: 21px;
+  text-align: right;
 }
 
 #logoHolder {

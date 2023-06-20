@@ -53,10 +53,13 @@ myFT.on('instantads',function(){
       let partner_logo_src = feedItems[0].image_logo_300x250;
 
       //testing swap between layouts for partner logo
+      // partner_logo_src = 'n/a'
       partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
+        // Terms should be right aligned when no partner logo
+        document.getElementById('cardtext_holder').classList.add('no-partner');
       }else{
         //partner logo included in feed
         console.log('partner logo included!')

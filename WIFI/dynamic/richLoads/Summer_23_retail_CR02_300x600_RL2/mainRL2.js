@@ -99,7 +99,18 @@ myFT.on('theFeedLoaded', function(e) {
 });
 
 //@FT Feed data callback function
-function feedLoaded(feed){
+function feedLoaded(feedItems){
+  // If no partner logo terms should be right-aligned
+  let partner_logo_src = feedItems[0].image_logo_300x250;
+  //testing swap between layouts for partner logo
+  // partner_logo_src = 'n/a'
+  partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
+
+  if(partner_logo_src == "n/a"){
+    // Terms should be right aligned when no partner logo
+    document.getElementById('terms').classList.add('no-partner');
+  }
+
   if(!thisFeedLoaded){
     thisFeedLoaded=true;
     try{

@@ -190,6 +190,12 @@ video {
   width: 265px;
 }
 
+#terms.no-partner {
+  text-align: right;
+  width:252px;
+  right: 21px;
+}
+
 #terms .asterisk{
   font-family:  "ESKlarheitGrotesk Smbd";
   font-size: 7px;

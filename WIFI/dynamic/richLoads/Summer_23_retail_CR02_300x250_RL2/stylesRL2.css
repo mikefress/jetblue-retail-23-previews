@@ -202,16 +202,37 @@ video {
   margin-bottom: 0px;
 }
 
-
-#terms{
-  position: absolute;
+#terms-mask {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 9px;
-  left: 19px;
-  top: 236px;
-  width: 250px;
-  color: #fff;
+  left: 21px;
+  right: 17px;
+  top: 226px;
+  width: 262px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.terms-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.no-partner .terms-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+#terms-wrapper.no-partner  > span {
+  position: relative;
+}
+
+.no-partner #terms {
+  padding-left: 5px;
 }
 
 #logo {
