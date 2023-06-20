@@ -236,4 +236,5 @@ video {
   top: 275.5px;
   overflow: hidden;
   border-radius: 16px;
+  z-index: 1;
 }

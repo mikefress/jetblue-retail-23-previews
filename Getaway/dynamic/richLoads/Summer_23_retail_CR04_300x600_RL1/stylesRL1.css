@@ -192,6 +192,7 @@ video {
   height: 70px;
   left: 115px;
   top: 212px;
+  z-index: 1;
   overflow: hidden;
   border-radius: 26px;
 }

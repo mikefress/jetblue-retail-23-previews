@@ -228,4 +228,5 @@ video {
   top: 5px;
   overflow: hidden;
   border-radius: 12px;
+  z-index: 1;
 }

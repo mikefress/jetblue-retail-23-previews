@@ -212,6 +212,7 @@ video {
   border-radius: 100%;
   background-color: #00E1FF;
   overflow: hidden;
+  z-index: 1;
 }
 
 #globeHolder {

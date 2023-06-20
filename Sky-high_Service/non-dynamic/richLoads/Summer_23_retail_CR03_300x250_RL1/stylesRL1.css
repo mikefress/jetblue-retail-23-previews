@@ -215,15 +215,16 @@ video {
 }
 
 /* Creative */
-
 #globe {
   width: 109px;
   height: 109px;
   left: 95px;
   top: 50px;
-  border-radius: 100%;
+  border-radius: 109px;
   background-color: #00E1FF;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 #globeHolder {
@@ -235,6 +236,10 @@ video {
 #countries {
   width: 193px;
   height: 122px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
 }
 
 #badge {
@@ -252,6 +257,7 @@ video {
   top: 115px;
   width: 20px;
   height: auto;
+  z-index: 1;
 }
 
 #nametag {
