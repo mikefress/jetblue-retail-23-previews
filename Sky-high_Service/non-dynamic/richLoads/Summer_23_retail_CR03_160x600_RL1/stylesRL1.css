@@ -243,6 +243,7 @@ video {
 #plane {
   left: 20px;
   top: 332px;
+  z-index: 2;
 }
 
 #nametag {

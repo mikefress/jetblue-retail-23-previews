@@ -234,6 +234,7 @@ video {
 #plane {
   left: 38px;
   top: 314px;
+  z-index: 2;
 }
 
 #nametag {
