@@ -179,21 +179,45 @@ video {
   transform-origin: 50% 50%;
 }
 
-#terms {
-  position: absolute;
-  font-family:  "ESKlarheitGrotesk Smbd";
-  color: #fff;
+.no-partner #terms-mask {
+  flex-direction: row;
+  justify-content: flex-end;
+  left: auto;
+  text-align: right;
+}
+
+#terms-mask {
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 9px;
   left: 27px;
-  top: 581px;
-  width: 265px;
+  right: 21px;
+  top: 572px;
+  width: 252px;
+  color: #ffffff;
+  overflow: hidden;
 }
 
-#terms.no-partner {
+.terms-container {
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.no-partner .terms-container {
+  flex-direction: row;
+  justify-content: flex-end;
   text-align: right;
-  width:252px;
-  right: 21px;
+}
+
+.no-partner #terms {
+  padding-left: 5px;
+}
+
+.no-partner .terms {
+  text-align: right;
 }
 
 #terms .asterisk{

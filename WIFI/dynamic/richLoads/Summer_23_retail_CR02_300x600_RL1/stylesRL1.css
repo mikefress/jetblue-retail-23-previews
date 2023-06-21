@@ -131,21 +131,42 @@ video {
 
 /* terms and logo text */
 
-.terms {
+.no-partner #terms-mask {
+  left: auto;
+  text-align: right;
+}
+
+#terms-mask {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 9px;
   left: 27px;
-  width: 250px;
+  right: 21px;
+  top: 572px;
+  width: 252px;
+  color: #ffffff;
+  overflow: hidden;
 }
 
-#terms1, #termsCopyright {
-  top: 572px;
+.terms-container {
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.no-partner .terms-container {
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.no-partner #terms1 {
+  padding-left: 5px;
 }
 
 .no-partner .terms {
-  left: auto;
-  right: 21px;
   text-align: right;
 }
 

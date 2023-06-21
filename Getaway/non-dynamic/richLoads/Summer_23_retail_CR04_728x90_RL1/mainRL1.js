@@ -65,9 +65,11 @@ function animate() {
   .to('.beach', 1, { y: 50, ease: "none" }, "frame2+=2")
   .to('#window', 1, { autoAlpha: 1, ease: "none" }, "frame2+=2")
   .to('#sun', 1, { y: -80, ease: "none" }, "frame2+=2")
-  .to('#chair', 1, { x: 0, ease: "none" }, "frame2+=2")
+  .to(['#window', '#passenger'], 1, { x: "-=50", ease: "none" }, "frame2+=2")
+  .to('#chair', 1, { x: -45, ease: "none" }, "frame2+=2")
+  .to('#chair2', 1, { x: 25, ease: "none" }, "frame2+=2")
 
-  .addLabel('frame_END', "frame2+=8")
+  .addLabel('frame_END', "frame2+=6")
   .to('#endframeBg', 0.6 ,{ left: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#h3', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=0.5')
   .to('#cta', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame_END+=1')

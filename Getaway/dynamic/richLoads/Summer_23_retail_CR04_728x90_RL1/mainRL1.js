@@ -123,8 +123,10 @@ function animate() {
   .to('.beach', 1, { y: 50, ease: "none" }, "frame2+=2")
   .to('#window', 1, { autoAlpha: 1, ease: "none" }, "frame2+=2")
   .to('#sun', 1, { y: -80, ease: "none" }, "frame2+=2")
-  .to('#chair', 1, { x: 0, ease: "none" }, "frame2+=2")
-  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame2+=3.5')
+  .to(['#window', '#passenger'], 1, { x: "-=50", ease: "none" }, "frame2+=2")
+  .to('#chair', 1, { x: -45, ease: "none" }, "frame2+=2")
+  .to('#chair2', 1, { x: 25, ease: "none" }, "frame2+=2")
+  .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame2+=3')
 
   .addLabel('frame3', 'frame2+=4')
   .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut }, "frame3")
@@ -134,11 +136,11 @@ function animate() {
   .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
 
 
-    ////////////////////////////////////////
-    //@FT2 code block start
-    .call(playEndframe, ["param1"], "frame_END")
-    //@FT2 code block end
-    ////////////////////////////////////////
+  ////////////////////////////////////////
+  //@FT2 code block start
+  .call(playEndframe, ["param1"], "frame_END")
+  //@FT2 code block end
+  ////////////////////////////////////////
 
 
 }

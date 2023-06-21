@@ -238,7 +238,11 @@ video {
 }
 
 #chair {
-  transform: translateX(100px)
+  transform: translateX(75px)
+}
+
+#chair2 {
+  transform: translateX(150px)
 }
 
 #foregroundClouds, #backgroundClouds {
@@ -248,11 +252,11 @@ video {
 }
 
 #cloudHolder {
-  width: 23.5px;
+  width: 23px;
   height: 31px;
-  left: 387.8px;
+  left: 388.5px;
   top: 5px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 24px;
   z-index: 1;
 }

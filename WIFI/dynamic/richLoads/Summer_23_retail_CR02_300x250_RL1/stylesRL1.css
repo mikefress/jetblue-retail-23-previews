@@ -140,8 +140,6 @@ video {
 /* terms and logo text */
 
 .no-partner #terms-mask {
-  flex-direction: row;
-  justify-content: flex-end;
   left: auto;
   right: 18px;
   text-align: right;
