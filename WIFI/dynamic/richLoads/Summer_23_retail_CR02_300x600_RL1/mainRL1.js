@@ -59,8 +59,6 @@ myFT.on('instantads',function(){
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
-        // Terms should be right aligned when no partner logo
-        document.getElementById('cardtext_holder').classList.add('no-partner');
       }else{
         //partner logo included in feed
         console.log('partner logo included!')
@@ -107,7 +105,6 @@ function init() {
 }
 
 function animate() {
-  const termsWidth = document.getElementById('terms1').offsetWidth;
   //make parent (base file) border black
 
   tl.set(["#main_content"], { autoAlpha: 1, rotation: 0.01, force3D: true });
@@ -138,10 +135,6 @@ function animate() {
 
   .addLabel('frame3', "frame2+=2")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
-
-  if (partner_logo_src === 'n/a') {
-    tl.to('.terms-container', 0.5, { x: 0, ease: Power1.easeOut }, 'frame3+=0.5')
-  }
   tl.to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=0.5')
 
   .to('#plane', 1, { y: 0, ease: Power2.easeInOut}, 'frame3+=5.0')
@@ -149,15 +142,11 @@ function animate() {
   .addLabel('frame_END', "frame3+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
-  if (partner_logo_src === 'n/a') {
-    tl.to('.terms-container', 0.5, { x: termsWidth - 1, ease: Power1.easeOut }, 'frame_END')
-      .to('#termsCopyright', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END+=1.2')
-  }
    
 
     ////////////////////////////////////////
     //@FT2 code block start
-    tl.call(playEndframe, ["param1"], "frame_END")
+    .call(playEndframe, ["param1"], "frame_END")
     //@FT2 code block end
     ////////////////////////////////////////
 
