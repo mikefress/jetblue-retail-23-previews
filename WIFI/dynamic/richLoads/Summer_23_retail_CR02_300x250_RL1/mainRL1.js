@@ -58,12 +58,9 @@ myFT.on('instantads',function(){
       partner_logo_src = feedItems[0].image_logo_300x250;
 
       //testing swap between layouts for partner logo
-      // partner_logo_src = 'n/a'
       partner_logo_src = 'https://previews.cainandabelddb.com/clients/jetblue/Jetblue_resoucres/partner_logos_feed/sa-Horiz.png'
       
       if(partner_logo_src == "n/a"){
-        // Terms should be right aligned when no partner logo
-        document.getElementById('cardtext_holder').classList.add('no-partner');
       }else{
         var partner_logo_img = myFT.$("#partner_logo_img");
         partner_logo_img[0].src=partner_logo_src;
@@ -107,11 +104,7 @@ function init() {
 }
 
 function animate() {
-  const termsWidth = document.getElementById('terms1').offsetWidth;
-  tl.set(["#main_content"], { autoAlpha: 1, force3D: true })
-  if (partner_logo_src === 'n/a') {
-    tl.set('.terms-container', { x: termsWidth - 1 });
-  }
+  tl.set(["#main_content"], { autoAlpha: 1, force3D: true });
 
   tl.addLabel('frame1', 0)
   .to('#h1', 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame1')
@@ -136,22 +129,15 @@ function animate() {
   .addLabel('frame3', "frame2+=2")
   .to('#h1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame3')
 
-  if (partner_logo_src === 'n/a') {
-    tl.to('.terms-container', 0.5, { x: 0, ease: Power1.easeOut }, 'frame3+=0.5')
-  }
-  tl.to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1')
+  .to(['#h3', '#terms1'], 0.5, { autoAlpha: 1, ease: Power1.easeOut}, 'frame3+=1')
 
   .addLabel('frame_END', "frame3+=3.5")
   .to('#endframeBg', 0.6 ,{ top: 0, ease: Back.easeOut.config(.3)}, 'frame_END')
   .to('#terms1', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END')
-  if (partner_logo_src === 'n/a') {
-    tl.to('.terms-container', 0.5, { x: termsWidth - 1, ease: Power1.easeOut }, 'frame_END')
-      .to('#termsCopyright', 0.5, { autoAlpha: 0, ease: Power1.easeOut}, 'frame_END+=1.2')
-  }
 
   ////////////////////////////////////////
   //@FT2 code block start
-  tl.call(playEndframe, ["param1"], 'frame_END')
+  .call(playEndframe, ["param1"], 'frame_END');
   //@FT2 code block end
   ////////////////////////////////////////
 
