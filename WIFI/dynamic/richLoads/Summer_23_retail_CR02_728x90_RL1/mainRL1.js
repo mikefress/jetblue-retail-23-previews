@@ -57,8 +57,6 @@ myFT.on('instantads',function(){
 
       if(partner_logo_src == "n/a"){
         //no partner logo included in feed, do nothing
-        // Terms should be right aligned when no partner logo
-        document.getElementById('cardtext_holder').classList.add('no-partner');
       }else{
         //partner logo included in feed
         console.log('partner logo included!')
