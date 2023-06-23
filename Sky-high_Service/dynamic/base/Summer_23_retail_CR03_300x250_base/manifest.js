@@ -23,7 +23,6 @@ FT.manifest({
 		{"name": "legal_color",					"type": "text", 			"default": "#FFFFFF"},
 		{"name": "CTA_background_color",			"type": "text", 		"default": "#FFFFFF"},
 		{"name": "CTA_text_color",				"type": "text", 			"default": "#00205B"},
-		{"name": "jetBlue_logo",					"type": "image", 		"default": "jB_logo_noFlag.svg"},
 		{"name": "headline1_text",				"type": "text",				"default": "Fly with JetBlue<br>"},
 		{"name": "headline2_text",				"type": "text",				"default": ""},
 		{"name": "one_way_text",					"type": "text",			"default": "one<br>way<sup class='asterisk'>&ast;</sup>"},
