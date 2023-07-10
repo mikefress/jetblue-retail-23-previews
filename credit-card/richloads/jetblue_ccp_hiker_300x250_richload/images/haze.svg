@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="250" viewBox="0 0 300 250">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.049" y1="0.177" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#4083d5"/>
+    </linearGradient>
+    <clipPath id="clip-JetBlue_Credit_Card_Platform_Hiker_300x250_Frame01_1">
+      <rect width="300" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="JetBlue_Credit_Card_Platform_Hiker_300x250_Frame01_1" data-name="JetBlue_Credit_Card_Platform_Hiker_300x250_Frame01 – 1" clip-path="url(#clip-JetBlue_Credit_Card_Platform_Hiker_300x250_Frame01_1)">
+    <rect id="Rectangle_2307" data-name="Rectangle 2307" width="300" height="250" transform="translate(300 250) rotate(180)" fill="url(#linear-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+  </g>
+</svg>

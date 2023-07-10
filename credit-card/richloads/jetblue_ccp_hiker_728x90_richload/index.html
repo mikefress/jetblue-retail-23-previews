@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flashtalking In-Banner Video Ad using Custom Elements</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="https://cdn.flashtalking.com/frameworks/js/gsap/latest/TweenMax.min.js"></script>
+		<script src="CustomEase.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="main.js" defer></script>
+	</head>
+	<body>
+		<div id="container">
+			<!-- <ft-video id="video1" name="video1" autoplay></ft-video> -->
+			<!--
+				Flashtalking Custom Element Documentation:
+				https://flashtalkingsupport.zendesk.com/hc/en-us/sections/360000054268-JS-Docs-2-10-Elements
+			-->
+
+			<img id="bkg" src="images/bkg.jpg" alt="">
+			<img id="man" src="images/man.png" alt="">
+
+			<!-- <div id="copy1-blur" class="hidden blur">
+				40,000
+			</div> -->
+
+			<div id="copy1" class="hidden">
+				40,000
+			</div>
+
+			<!-- <div id="copy2-blur" class="hidden blur">
+				reasons
+			</div> -->
+
+			<div id="copy2" class="hidden">
+				reasons
+			</div>
+
+			<!-- <div id="copy3-blur" class="hidden blur">
+				to smile. 
+			</div> -->
+
+			<div id="copy3" class="hidden">
+				to smile. 
+			</div>
+			
+			<img id="man-2" src="images/man_2.png" alt="">
+			<div id="pink-bar-1"></div>
+
+
+			<!-- <div class="rectangle"></div> -->
+
+			<!-- <img id="test" src="images/test.jpg" alt=""> -->
+      
+			<div id="endframe" class="">
+				<!-- <div id="light-blue-bar"></div>
+				<div id="dark-blue-bar"></div>
+				<div id="pink-bar-2"></div> -->
+				<div id="endframe_headline" class="hidden">
+					<span class="">Earn 40,000 bonus points <br>with the </span><span class="fuchsia">JetBlue Plus Card.</span>
+				</div>
+				<img id="card" src="images/card.png" alt="">
+				<div id="terms" class="hidden">Terms Apply</div>
+				<div id="cta">Apply now</div>
+			</div>
+			<div id="logo-bar"></div>
+			<img id="logo" src="images/logo.svg" alt="">
+		</div>
+    <div id="default_exit"></div>
+		<!-- 
+			Flashtalking HTML5 API Documentation:
+			https://flashtalkingsupport.zendesk.com/hc/en-us/articles/360000616047-Class-FT  
+		-->
+		<script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js"></script>
+	</body>
+</html>
